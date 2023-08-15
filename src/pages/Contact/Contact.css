@@ -1,0 +1,77 @@
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.c-form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  border-radius: 1rem;
+  border-image: linear-gradient(#f6b73c, #000000) 30;
+  border-width: 4px;
+  border-style: solid;
+  padding: 1rem 0;
+}
+
+.c-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 90%;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.input-box > img {
+  width: 22px;
+}
+
+.input-box > input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--orange);
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+.radio-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.submit-button {
+  background-color: var(--orange);
+  padding: 10px 22px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.5;
+}
+
+.submit-button:hover {
+  background-color: #fff;
+  border: 2px solid var(--orange);
+  box-shadow: 0 0 14px -4px var(--orange);
+}
+
+@media only screen and (max-width:810px){
+    .c-form-container {
+        width: 90%;
+    }
+}

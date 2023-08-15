@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@300&family=Inter:wght@400;600;700&family=Montserrat:wght@300&family=Nunito+Sans:wght@300&family=Piazzolla:wght@900&family=Roboto+Mono&family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --orange: rgb(255, 149, 0);
+}

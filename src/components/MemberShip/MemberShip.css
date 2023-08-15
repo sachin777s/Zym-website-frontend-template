@@ -1,0 +1,163 @@
+.membership {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.membership-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.membership-cards > div {
+  background-color: #eee;
+  width: 20rem;
+  height: 40rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  border: 2px solid var(--orange);
+  transition: all 0.3s;
+}
+
+.membership-cards > *:nth-child(2) {
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+.membership-cards > *:nth-child(2):hover {
+  box-shadow: 0 0 10px 0 var(--orange);
+}
+
+.membership-cards > *:nth-child(1):hover,
+.membership-cards > *:nth-child(3):hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 0 var(--orange);
+  z-index: 1;
+}
+
+.benefits-list {
+  list-style: none;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.benefits-list > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.membership-cards > div > button {
+  padding: 10px 22px;
+  font-size: 1rem;
+  background-color: var(--orange);
+  border: 2px solid #eee;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.membership-cards > div > button:hover {
+  border: 2px solid var(--orange);
+  background-color: #eee;
+  color: var(--orange);
+}
+
+.purchase-sub {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.purchase-sub > h2,
+.purchase-sub > p
+{
+  color: #fff;
+}
+
+.purchase-sub > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.purchase-sub > .close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.purchase-sub > form > input {
+  width: 20rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--orange);
+  color: #fff;
+}
+
+.purchase-sub > form > button {
+  width: 10rem;
+  padding: 10px 22px;
+  font-size: 1rem;
+  background-color: var(--orange);
+  border: 2px solid #eee;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.purchase-sub > form > button:hover {
+  border: 2px solid var(--orange);
+  background-color: #eee;
+  color: var(--orange);
+}
+
+@media only screen and (max-width: 810px) {
+  .membership-cards {
+    flex-direction: column;
+  }
+
+  .membership-cards > *:nth-child(2) {
+    transform: scale(1);
+  }
+
+  .membership-cards > *:nth-child(2):hover {
+    box-shadow: none;
+  }
+
+  .membership-cards > *:nth-child(1):hover,
+  .membership-cards > *:nth-child(3):hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  .membership-cards > div {
+    height: auto;
+  }
+}

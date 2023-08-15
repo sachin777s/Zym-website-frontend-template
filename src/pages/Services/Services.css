@@ -1,0 +1,60 @@
+.services{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.service-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.s-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--orange);
+    height: 10rem;
+    width: 8rem;
+    transition: all 0.3s;
+}
+
+.s-card:hover{
+    transform: scale(1.1);
+    border-radius: 1rem;
+}
+
+.s-card > span{
+    color: #fff;
+}
+
+.s-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.service-points{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.service-points > ul{
+    list-style: none;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.s-image > img{
+    width: 80%;
+}

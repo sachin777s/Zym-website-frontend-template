@@ -1,0 +1,44 @@
+.footer {
+  width: 100%;
+  height: 10rem;
+  margin-top: 5rem;
+  background-color: #16111d;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.explore,
+.available,
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.explore > h4,
+.available > h4,
+.contact-info > h4 {
+  color: #fff;
+}
+
+.explore > ul,
+.available > ul,
+.contact-info > ul {
+  color: #fff;
+  list-style: none;
+}
+
+.explore > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.explore > ul > li > a:hover {
+  text-decoration: underline;
+}
